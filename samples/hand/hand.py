@@ -197,7 +197,7 @@ def train(model):
     """Train the model."""
     # Training dataset.
     dataset_train = HandDataset()
-    dataset_train.load_hand(args.dataset + "try.txt")
+    dataset_train.load_hand(args.dataset + "train.txt")
     dataset_train.prepare()
     #
     # Validation dataset
@@ -228,7 +228,7 @@ def test(model, to_save=True):
     testset = args.testset
     dataset_test = HandDataset()
 
-    testset == "oxford":
+    testset == "oxford"
     dataset_test.load_hand(args.dataset + "oxford_annos.txt")
 
 
