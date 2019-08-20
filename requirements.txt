@@ -1,0 +1,6 @@
+tensorflow-gpu==1.4.0
+keras==2.1.3
+scikit-image
+Ipython
+opencv-python
+h5py
