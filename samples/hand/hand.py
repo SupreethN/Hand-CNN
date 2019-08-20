@@ -227,12 +227,10 @@ def test(model, to_save=True):
     # Test dataset.
     testset = args.testset
     dataset_test = HandDataset()
-    if testset == "tv":
-        dataset_test.load_hand(args.dataset + "test_IDs.txt")
-    elif testset == "oxford":
-        dataset_test.load_hand(args.dataset + "oxford_annos.txt")
-    else:
-        print("NO SET")
+
+    testset == "oxford":
+    dataset_test.load_hand(args.dataset + "oxford_annos.txt")
+
 
     dataset_test.prepare()
     pred_m = []
@@ -672,7 +670,7 @@ if __name__ == '__main__':
                         metavar="path to imageset",
                         help='imageset to apply the color splash effect on')
     parser.add_argument('--testset', required=False,
-                        metavar="path to imageset",default="tv",
+                        metavar="path to imageset",default="oxford",
                         help='imageset to apply the color splash effect on')
     args = parser.parse_args()
 
