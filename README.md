@@ -71,6 +71,10 @@ setup.py
 * `./model/mask_rcnn_coco.h5`: pretrained Mask-RCNN weights on COCO dataset.
 * `./model/trained_model.h5`: model trained on TV-Hand and COCO-Hand data.
 
+### Models
+
+Download the models from [models](https://drive.google.com/drive/folders/1xqq8aOCQSkVoXO7FM-vjUV4OLvAUyOmb?usp=sharing) and place them in `./model/`.
+
 ### Training
 
 Use the following command to train Hand-CNN:
@@ -96,7 +100,6 @@ Use the following command to to evaluate a trained Hand-CNN:
 `python -W ignore samples/hand/hand.py --weight path/to/weights --command test --testset oxford`
 
 * `--weight`: Path to the trained weights to be used for evaluation. 
-* `--testset`: `oxford` or `tv`, specifying the testset to be used for evaluation.
 
 ### Datasets
 
