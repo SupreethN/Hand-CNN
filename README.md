@@ -57,7 +57,7 @@ samples/
 
 model/
   mask_rcnn_coco.h5
-  trained_model.h5
+  trained_weights.h5
 
 requirements.txt
 setup.cfg
@@ -69,7 +69,7 @@ setup.py
 * `./mrcnn/contextual_attention.py`: this file implements the proposed attention method.
 * `./samples/hand/hand.py`: code for training and evaluating Hand-CNN.
 * `./model/mask_rcnn_coco.h5`: pretrained Mask-RCNN weights on COCO dataset.
-* `./model/trained_model.h5`: model trained on TV-Hand and COCO-Hand data.
+* `./model/trained_weights.h5`: model trained on TV-Hand and COCO-Hand data.
 
 ### Models
 
@@ -89,7 +89,7 @@ The training set to be used can be specified in `train` function of the file `./
 
 Use the following to run detection on images and visualize them:
 
-`python -W ignore detection.py --image_dir /path/to/folder_containing_images/`
+`python -W ignore detect.py --image_dir /path/to/folder_containing_images/`
 
 The outputs will be stored `./outputs/`. 
 
