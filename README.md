@@ -24,7 +24,7 @@ Install the required dependecies as in `requirements.txt`.
 
 Create annotations in a `.txt` file in the follwing format:
 
-`/path/to/image/, x_min, x_max, y_min, y_max, x1, y1, x2, y2, x3, y3, y4, hand`, where 
+`/path/to/image/, x_min, y_min, x_max, y_max, x1, y1, x2, y2, x3, y3, y4, hand`, where 
 
 * `(x1, y1)`, `(x2, y2)`, `(x3, y3)` and `(x4, y4)` are the coordinates of the polygon (rotated) bounding box for a hand in the anti-clockwise order.
 * The wrist is given by the line joining `(x1, y1)` and `(x2, y2)`.
