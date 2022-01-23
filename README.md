@@ -1,3 +1,8 @@
+# Update: PyTorch based Hand Detector
+
+If you want to use a PyTorch based hand detector, check this respository [ContactHands](https://github.com/cvlab-stonybrook/ContactHands) for our NeurIPS'20 paper on hand detection and contact estimation. Using this code, we can not only detect hands but also obtain their contact information.
+
+
 # Contextual Attention for Hand Detection in the Wild
 
 This repository contains the code and datasets related to the following paper:
